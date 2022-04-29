@@ -87,13 +87,13 @@ namespace CustomerAPI
         protected global::System.Web.UI.WebControls.Label lblphone0;
 
         /// <summary>
-        /// Control txtphone0.
+        /// Control txtemail.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtphone0;
+        protected global::System.Web.UI.WebControls.TextBox txtemail;
 
         /// <summary>
         /// Control lblphone1.
@@ -105,13 +105,13 @@ namespace CustomerAPI
         protected global::System.Web.UI.WebControls.Label lblphone1;
 
         /// <summary>
-        /// Control txtphone1.
+        /// Control txtnotes.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtphone1;
+        protected global::System.Web.UI.WebControls.TextBox txtnotes;
 
         /// <summary>
         /// Control lblmsj.
@@ -148,5 +148,32 @@ namespace CustomerAPI
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnShow;
+
+        /// <summary>
+        /// Control txtbusqueda.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtbusqueda;
+
+        /// <summary>
+        /// Control BtnSearch.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BtnSearch;
+
+        /// <summary>
+        /// Control gvcustomers.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView gvcustomers;
     }
 }

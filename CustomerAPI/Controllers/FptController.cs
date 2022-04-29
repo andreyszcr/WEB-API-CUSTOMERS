@@ -12,35 +12,28 @@ using CapaDatos;
 using CustomerAPI.Models;
 namespace CustomerAPI.Controllers
 {
-    public class CustomersController : ApiController
+    public class fptController : ApiController
     {
         private FTPDataBaseEntities db = new FTPDataBaseEntities();
         private CustomerD customD = new CustomerD();
         [ResponseType(typeof(Customers))]
-        public IHttpActionResult GetCustomers()
+        public List<Customer> GetCustomers()
         {
             try
             {
-                List<Customer> c = new List<Customer>();
+                List<Models.Customer> c = new List<Models.Customer>();
                 List<Customers> data = customD.GetCustomers();
-                if (data.Count > 0)
+                foreach (Customers cat in data)
                 {
-                    foreach (Customers customers in data)
-                    {
-                        Customer temp = new Customer();
-                        temp.IdCustomer = customers.IdCustomer;
-                        temp.nameCustomer = customers.nameCustomer;
-                        temp.phone = customers.phone;
-                        temp.email = customers.email;
-                        temp.notes = customers.notes;
-                        c.Add(temp);
-                    }
-                    return Ok(c);
+                   Models.Customer cm = new Models.Customer();
+                   cm.IdCustomer = cat.IdCustomer;
+                   cm.nameCustomer = cat.nameCustomer;
+                   cm.phone = cat.phone;
+                   cm.email = cat.email;
+                   cm.notes = cat.notes;
+                   c.Add(cm);
                 }
-                else
-                {
-                    return NotFound();
-                }
+                return c;
             }
             catch (Exception ex)
             {

@@ -32,23 +32,38 @@
             <br />
             <asp:Label ID="lblphone0" runat="server" Text="Correo Electronico"></asp:Label>
 &nbsp;
-            <asp:TextBox ID="txtphone0" runat="server" Width="173px"></asp:TextBox>
+            <asp:TextBox ID="txtemail" runat="server" Width="173px"></asp:TextBox>
             <br />
             <br />
             <asp:Label ID="lblphone1" runat="server" Text="Notas"></asp:Label>
 &nbsp;
             <br />
-            <asp:TextBox ID="txtphone1" runat="server" Height="110px" Width="357px"></asp:TextBox>
+            <asp:TextBox ID="txtnotes" runat="server" Height="110px" Width="357px"></asp:TextBox>
             <br />
             <br />
             <asp:Label ID="lblmsj" runat="server" Text="msj"></asp:Label>
             <br />
-            <asp:Button ID="btnAdd" runat="server" Text="Agregar" />
+            <asp:Button ID="btnAdd" runat="server" Text="Agregar" OnClick="btnAdd_Click" />
 &nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Button ID="btnDelete" runat="server" Text="Button" />
+            <asp:Button ID="btnDelete" runat="server" Text="Eliminar" OnClick="btnDelete_Click" />
 &nbsp;&nbsp;&nbsp;
-            <asp:Button ID="btnShow" runat="server" Text="Mostrar Reporte" />
+            <asp:Button ID="btnShow" runat="server" Text="Mostrar Reporte" OnClick="btnShow_Click" />
             <br />
+            <br />
+            <asp:TextBox ID="txtbusqueda" runat="server"></asp:TextBox>
+            &nbsp;&nbsp;
+            <asp:Button ID="BtnSearch" runat="server" Text="Buscar" />
+            <br />
+            <br />
+            <asp:GridView ID="gvcustomers" runat="server" AutoGenerateColumns="False" Width="333px">
+                <Columns>
+                    <asp:BoundField HeaderText="Identificacion" />
+                    <asp:BoundField HeaderText="Nombre" />
+                    <asp:BoundField HeaderText="Telefono" />
+                    <asp:BoundField HeaderText="Correo" />
+                    <asp:BoundField HeaderText="Notas" />
+                </Columns>
+            </asp:GridView>
             <br />
             <br />
             <br />
