@@ -55,14 +55,7 @@
             <asp:Button ID="BtnSearch" runat="server" Text="Buscar" />
             <br />
             <br />
-            <asp:GridView ID="gvcustomers" runat="server" AutoGenerateColumns="False" Width="333px">
-                <Columns>
-                    <asp:BoundField HeaderText="Identificacion" />
-                    <asp:BoundField HeaderText="Nombre" />
-                    <asp:BoundField HeaderText="Telefono" />
-                    <asp:BoundField HeaderText="Correo" />
-                    <asp:BoundField HeaderText="Notas" />
-                </Columns>
+            <asp:GridView ID="gvcustomers" runat="server" Height="64px" Width="333px">
             </asp:GridView>
             <br />
             <br />
