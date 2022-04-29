@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="FTPDataBaseModelStoreContainer" CdmEntityContainer="FTPDataBaseEntities">
+    <EntitySetMapping Name="Customers">
+      <EntityTypeMapping TypeName="FTPDataBaseModel.Customers">
+        <MappingFragment StoreEntitySet="Customers">
+          <ScalarProperty Name="IdCustomer" ColumnName="IdCustomer" />
+          <ScalarProperty Name="nameCustomer" ColumnName="nameCustomer" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="notes" ColumnName="notes" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

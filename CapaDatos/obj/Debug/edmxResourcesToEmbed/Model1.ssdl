@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FTPDataBaseModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Customers">
+    <Key>
+      <PropertyRef Name="IdCustomer" />
+    </Key>
+    <Property Name="IdCustomer" Type="int" Nullable="false" />
+    <Property Name="nameCustomer" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="phone" Type="int" Nullable="false" />
+    <Property Name="email" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="notes" Type="varchar" MaxLength="4000" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="FTPDataBaseModelStoreContainer">
+    <EntitySet Name="Customers" EntityType="Self.Customers" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
